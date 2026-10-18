@@ -184,6 +184,8 @@ section{position:relative}
 .tabs button[aria-selected="true"]{background:var(--ink);color:var(--cream)}
 .lookbook{background:var(--cream);padding:10px;box-shadow:0 12px 26px rgba(58,36,25,.25);transform:rotate(.6deg);overflow-x:auto}
 .lookbook img{width:100%;min-width:520px}
+.disc{border-left:3px solid var(--rust);background:var(--cream);padding:12px 14px;color:var(--ink)!important;font-size:.95rem}
+.disc b{font-weight:600}
 .dress .hand{font-size:1.5rem;color:var(--rust);margin-top:14px;display:inline-block;transform:rotate(-2deg)}
 @media (max-width:760px){.dress{grid-template-columns:minmax(0,1fr)}}
 
@@ -349,7 +351,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
 <!-- HERO -->
 <header class="hero" id="hero">
   <!-- Foto ilustrasi (Unsplash) -->
-  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1594206629888-32f6bfc2b343?auto=format&fit=crop&w=1600&q=70')"></div>
+  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1686943662852-0b00148e632a?auto=format&fit=crop&w=1600&q=70')"></div>
   <div class="wrap">
     <div>
       <span class="hand invited intro-in d1">You're invited to</span>
@@ -446,11 +448,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
       <p class="big">Formal untuk malam prom.</p>
       <div class="txt">
         <p>Keluarkan outfit terbaikmu: kemeja atau dress yang rapi, bawahan formal, dan wajib bersepatu. Bawa jaket juga, udara Bogor dingin di malam hari.</p>
-        <p style="font-size:.88rem">Contoh outfit hanya gambaran. Pakai yang terbaik yang kamu punya, tidak harus sama persis.</p>
-      </div>
-      <div class="swatches" aria-label="Warna yang cocok">
-        <div class="sw"><i style="background:#3b2418"></i>Cokelat tua</div><div class="sw"><i style="background:#9b6742"></i>Cokelat muda</div><div class="sw"><i style="background:#efe3cc"></i>Krem</div>
-        <div class="sw"><i style="background:#d6bf98"></i>Beige</div><div class="sw"><i style="background:#1c1714"></i>Hitam</div><div class="sw"><i style="background:#6f6a3c"></i>Hijau zaitun</div>
+        <p class="disc"><b>Foto outfit hanya referensi.</b> Tidak harus sama persis. Yang terpenting: <b>formal dan rapi, cowok wajib berkemeja, dan semua wajib bersepatu.</b></p>
       </div>
       <div class="rule" role="note"><span class="x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Dilarang keras membawa minuman keras.</b><small class="muted-l">Berlaku untuk semua peserta selama acara.</small></div></div>
     </div>
@@ -513,7 +511,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
         <span class="role">Penutup malam</span>
         <h4>DJ Set</h4>
         <p class="muted-l">Party sampai larut.</p>
-        <div class="with"><img loading="lazy" src="https://images.unsplash.com/photo-1580724430485-ed43daa4b4f3?auto=format&fit=crop&w=240&h=180&q=65" alt="Ilustrasi dance perform"><div><span class="label" style="color:var(--caramel)">Bersama</span><b>Dance perform</b></div></div>
+        <div class="with"><img loading="lazy" src="https://images.unsplash.com/photo-1580724430485-ed43daa4b4f3?auto=format&fit=crop&w=240&h=180&q=65" alt="Ilustrasi dance perform Naufal Quraish"><div><span class="label" style="color:var(--caramel)">Dance perform</span><b>Naufal Quraish</b></div></div>
       </article>
     </div>
     <span class="scribble">semua penampil teman kita sendiri ♡</span>
@@ -528,7 +526,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
     <div class="mood rv">
       <figure><img loading="lazy" src="https://images.unsplash.com/photo-1763573676620-b3f8b8ed5a72?auto=format&fit=crop&w=700&q=70" alt=""><figcaption>outfit squad</figcaption></figure>
       <figure><img loading="lazy" src="https://images.unsplash.com/photo-1559424452-eeb3a13ffe2b?auto=format&fit=crop&w=600&q=70" alt=""><figcaption>disco ball</figcaption></figure>
-      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1686943662852-0b00148e632a?auto=format&fit=crop&w=700&q=70" alt=""><figcaption>bestie moment</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1594206629888-32f6bfc2b343?auto=format&fit=crop&w=700&q=70" alt=""><figcaption>party night</figcaption></figure>
       <figure><img loading="lazy" src="villa-taman.jpg" alt=""><figcaption>sore di taman villa</figcaption></figure>
       <figure><img loading="lazy" src="https://images.unsplash.com/photo-1640162336242-a26771c24e7b?auto=format&fit=crop&w=600&q=70" alt=""><figcaption>prom look</figcaption></figure>
       <figure><img loading="lazy" src="https://images.unsplash.com/photo-1581740141458-a093e36f82a6?auto=format&fit=crop&w=700&q=70" alt=""><figcaption>photobooth</figcaption></figure>
@@ -546,7 +544,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
       <ol class="steps"><li>Isi nama, nomor WhatsApp, dan kehadiranmu.</li><li>Kalau hadir, transfer ke salah satu rekening di bawah.</li><li>Upload bukti transfer lalu kirim. Link grup peserta langsung muncul.</li></ol>
       <div class="pay">
         <div class="acct"><span class="logo bri" aria-hidden="true">BRI</span><div><b>4698 0101 9419 530</b><small>Bank BRI · a.n. Ni Kadek Dwi Utami</small></div><button class="copy" type="button" data-copy="469801019419530">Salin</button></div>
-        <div class="acct"><span class="logo spay" aria-hidden="true">ShopeePay</span><div><b>0831 1401 1511</b><small>ShopeePay · a.n. SMA</small></div><button class="copy" type="button" data-copy="083114011511">Salin</button></div>
+        <div class="acct"><span class="logo spay" aria-hidden="true">ShopeePay</span><div><b>0831 1401 1511</b><small>ShopeePay · a.n. Ni Kadek Dwi Utami</small></div><button class="copy" type="button" data-copy="083114011511">Salin</button></div>
       </div>
     </div>
     <div class="rv">
