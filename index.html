@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Prom Night 2026</title>
+<meta name="description" content="Undangan Prom Night 2026 · 2–3 November 2026 · El Villa Forest, Bogor">
+<meta property="og:title" content="Undangan Prom Night 2026">
+<meta property="og:description" content="Satu malam, sejuta kenangan. 2–3 November 2026 · El Villa Forest, Bogor">
+<meta property="og:image" content="https://prom-cell.github.io/promnight/og.jpg">
+<meta name="theme-color" content="#211812">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Caveat:wght@500;700&display=swap">
+<style>
+/* "Retro Memory Book": espresso and parchment bands joined by torn-paper edges, taped photo prints, small printed captions. */
+:root{
+  --espresso:#211812; --coffee:#3A2419; --coffee-2:#2b1e16; --caramel:#9B6742; --rust:#B76D3C; --rust-d:#9c5a2f;
+  --paper:#E8D5B5; --paper-2:#dcc59f; --cream:#F4E9D5; --ink:#2a1c14; --ink-soft:#5b4636; --soft-d:#cbb89b;
+  --line-d:rgba(232,213,181,.22); --line-l:rgba(58,36,25,.22);
+  --f-display:"Gloock","Iowan Old Style","Georgia",serif;
+  --f-body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --f-hand:"Caveat","Segoe Print","Bradley Hand",cursive;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--espresso);color:var(--cream);font-family:var(--f-body);font-size:16px;line-height:1.6;overflow-x:hidden}
+.js body.locked{overflow:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.1;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+p{margin:0}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.label{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.hand{font-family:var(--f-hand);font-weight:500;line-height:1}
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:400;margin:0;line-height:.95;text-wrap:balance}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:13px 22px;border:1px solid var(--rust);border-radius:3px;background:var(--rust);color:var(--cream);font:600 .8rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:var(--rust-d)}
+.btn.line{background:transparent;border-color:currentColor;color:inherit}
+.btn.line:hover{background:rgba(232,213,181,.08)}
+.paper .btn.line:hover{background:rgba(58,36,25,.06)}
+.btn[disabled]{opacity:.6;cursor:progress}
+.btn svg{width:16px;height:16px;flex:none}
+.edge{display:block;width:100%;height:26px;margin:-1px 0}
+.edge.to-paper{background:var(--espresso)} .edge.to-dark{background:var(--paper)}
+.print{background:var(--cream);padding:10px 10px 0;box-shadow:0 14px 30px rgba(0,0,0,.42);position:relative;margin:0}
+.print img{aspect-ratio:4/3;object-fit:cover;width:100%;filter:saturate(.9) sepia(.12)}
+.print figcaption{font-family:var(--f-hand);color:var(--ink);font-size:1.45rem;padding:6px 4px 8px}
+.print.tape::before{content:"";position:absolute;top:-11px;left:50%;width:90px;height:22px;margin-left:-45px;background:rgba(214,190,150,.82);transform:rotate(-4deg)}
+
+/* ===== opening cover ===== */
+#cover{position:fixed;inset:0;z-index:70;display:none;place-items:center;background:var(--paper);
+  padding:calc(24px + env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px));
+  transition:opacity .8s ease .35s,visibility 0s linear 1.15s}
+#cover::before{content:"";position:absolute;inset:0;background:radial-gradient(90% 70% at 50% 40%,rgba(255,250,240,.45),transparent 70%)}
+.js #cover{display:grid}
+#cover.gone{opacity:0;visibility:hidden}
+.card{position:relative;width:min(100%,30rem);background:var(--cream);color:var(--ink);padding:34px 28px 30px;text-align:center;box-shadow:0 22px 48px rgba(58,36,25,.28);border:1px solid var(--line-l);
+  transform:rotate(-1.2deg);transition:transform .9s cubic-bezier(.6,0,.2,1),opacity .6s ease}
+.card::before,.card::after{content:"";position:absolute;width:96px;height:26px;background:rgba(214,190,150,.78);top:-12px}
+.card::before{left:18px;transform:rotate(-8deg)} .card::after{right:18px;transform:rotate(7deg)}
+#cover.gone .card{transform:translateY(-38vh) rotate(-6deg) scale(.92);opacity:0}
+.card .label{color:var(--caramel)}
+.card h2{font-size:clamp(2.6rem,10vw,3.2rem);margin:14px 0 6px}
+.card .date{font-family:var(--f-hand);font-size:1.7rem;color:var(--caramel)}
+.card .to{font-size:.9rem;color:var(--ink-soft);margin-top:20px}
+.card .name{font-family:var(--f-hand);font-size:clamp(2.6rem,10vw,3.1rem);color:var(--rust);margin:2px 0 18px;min-height:1em;overflow-wrap:anywhere}
+.card input{width:100%;font:inherit;font-size:1rem;text-align:center;color:var(--ink);background:transparent;border:0;border-bottom:1.5px solid var(--ink-soft);padding:10px 4px;margin:4px 0 18px}
+.card input:focus{outline:none;border-color:var(--rust)}
+.card .meta{font-size:.8rem;color:var(--ink-soft);margin-top:14px}
+.intro-in{opacity:0;transform:translateY(14px);animation:rise .8s ease forwards}
+.intro-in.d1{animation-delay:.1s}.intro-in.d2{animation-delay:.22s}.intro-in.d3{animation-delay:.34s}.intro-in.d4{animation-delay:.46s}.intro-in.d5{animation-delay:.58s}
+@keyframes rise{to{opacity:1;transform:none}}
+.js .intro-in{animation-play-state:paused}.js .hero.live .intro-in{animation-play-state:running}
+
+/* ===== nav ===== */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(33,24,18,.95);border-bottom:1px solid var(--line-d)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--espresso);z-index:51}
+nav.top .wrap{display:flex;align-items:center;gap:16px;min-height:58px}
+.brand{font-family:var(--f-display);font-size:1.05rem;letter-spacing:.04em;white-space:nowrap;margin-right:auto;text-decoration:none}
+.brand small{font-family:var(--f-hand);color:var(--rust);font-size:1.25rem;margin-left:4px}
+nav.top ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+nav.top ul a{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.82;padding:8px 0;border-bottom:1px solid transparent}
+nav.top ul a.on,nav.top ul a:hover{opacity:1;border-color:var(--rust)}
+.musicbtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line-d);border-radius:999px;padding:5px 12px 5px 6px;background:none;color:var(--cream);font:500 .72rem var(--f-body);cursor:pointer;max-width:46vw}
+.musicbtn span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.musicbtn i{flex:none;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle,var(--rust) 0 4px,#120c08 5px 7px,#2a1d15 8px 10px,#120c08 11px 13px)}
+.musicbtn.on i{animation:spin 3s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.menubtn{display:none;width:42px;height:42px;border:1px solid var(--line-d);border-radius:50%;background:none;color:var(--cream);cursor:pointer;place-items:center}
+.menubtn svg{width:18px;height:18px}
+@media (max-width:820px){
+  .menubtn{display:grid}
+  nav.top ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--espresso);border-bottom:1px solid var(--line-d);padding:4px max(18px,env(safe-area-inset-right,0px)) 12px max(18px,env(safe-area-inset-left,0px))}
+  nav.top ul.open{display:flex}
+  nav.top ul a{display:block;padding:14px 0;border-bottom:1px solid var(--line-d)}
+}
+@media (max-width:420px){.musicbtn span{display:none}.musicbtn{padding:5px}}
+
+/* ===== hero ===== */
+.hero{position:relative;background:var(--espresso);overflow:hidden}
+.hero .bg{position:absolute;inset:0 0 0 34%;background-size:cover;background-position:center 30%;filter:sepia(.35) saturate(.85) contrast(1.05) brightness(.62);transform:scale(1.08);transition:transform 6s ease-out}
+.hero.live .bg{transform:scale(1)}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--espresso) 0%,rgba(33,24,18,.6) 40%,rgba(33,24,18,.15) 100%),linear-gradient(0deg,var(--espresso) 0%,transparent 38%)}
+.hero .wrap{position:relative;padding-block:76px 44px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:24px;align-items:end}
+.hero .invited{font-size:clamp(1.8rem,5vw,2.6rem);color:var(--paper);transform:rotate(-4deg);display:inline-block;margin-bottom:6px}
+.hero h1{font-size:clamp(4.2rem,15vw,9.5rem);line-height:.82;color:var(--cream);letter-spacing:-.01em}
+.hero .yr{font-family:var(--f-hand);font-size:clamp(3rem,10vw,5.6rem);color:var(--rust);display:block;margin:-.15em 0 0 .9em;transform:rotate(-6deg);width:max-content}
+.hero .tag{font-family:var(--f-display);font-size:clamp(1.3rem,3.2vw,1.8rem);color:var(--paper);margin-top:22px}
+.hero .lede{max-width:28rem;margin-top:8px;color:#e9dcc6;font-size:1.05rem}
+.hero .side{justify-self:end;text-align:right;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:#d8c6a8;line-height:1.9}
+.hero .print{transform:rotate(4deg);margin-top:26px;width:min(100%,250px)}
+@media (max-width:760px){.hero .bg{inset:0}.hero .wrap{grid-template-columns:minmax(0,1fr);padding-block:56px 30px}.hero .side{justify-self:start;text-align:left}.hero .print{justify-self:end;width:210px;margin-top:-6px}}
+
+/* ===== fact strip ===== */
+.strip{background:var(--paper);color:var(--ink)}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;padding-block:26px 30px;align-items:center}
+.strip .cell{padding:4px 22px;border-left:1px solid var(--line-l);min-width:0}
+.strip .cell:first-child{border-left:0;padding-left:0}
+.strip .label{color:var(--caramel);display:block;margin-bottom:4px}
+.strip b{font-family:var(--f-display);font-weight:400;font-size:1.55rem;line-height:1.05;display:block}
+.strip small{color:var(--ink-soft);font-size:.84rem}
+@media (max-width:760px){.strip .wrap{grid-template-columns:1fr 1fr;gap:18px 0}.strip .cell:nth-child(3){border-left:0;padding-left:0}.strip .cta{grid-column:1/-1}.strip .cta .btn{width:100%}}
+
+/* ===== sections ===== */
+section{position:relative}
+.dark{background:var(--espresso);color:var(--cream)}
+.paper{background:var(--paper);color:var(--ink);background-image:radial-gradient(120% 80% at 10% 0%,rgba(255,250,240,.32),transparent 60%),radial-gradient(90% 60% at 100% 100%,rgba(155,103,66,.12),transparent 60%)}
+.pad{padding-block:clamp(56px,9vw,96px)}
+.kicker{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.kicker::after{content:"";height:1px;flex:1;background:currentColor;opacity:.25}
+.dark .kicker{color:var(--paper)} .paper .kicker{color:var(--caramel)}
+.h2{font-size:clamp(2.4rem,7vw,4.2rem)}
+.h2 .hand{font-size:.62em;color:var(--rust);display:inline-block;transform:rotate(-4deg);margin-left:.2em}
+.muted-d{color:var(--soft-d)} .muted-l{color:var(--ink-soft)}
+
+/* letter */
+.letter{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.letter .body{font-size:1.06rem;display:grid;gap:14px;max-width:34rem;color:#ecdfc9;margin-top:22px}
+.letter .sign{font-family:var(--f-hand);font-size:1.9rem;color:var(--rust)}
+.collage{position:relative;min-height:360px}
+.collage .print{position:absolute}
+.collage .a{width:62%;left:0;top:10px;transform:rotate(-5deg)}
+.collage .b{width:52%;right:0;top:130px;transform:rotate(6deg)}
+@media (max-width:760px){.letter{grid-template-columns:minmax(0,1fr)}.collage{min-height:300px}}
+
+/* countdown */
+.count{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line-l);border-bottom:1px solid var(--line-l);margin:22px 0}
+.count div{padding:18px 6px;text-align:center;border-left:1px solid var(--line-l)}
+.count div:first-child{border-left:0}
+.count b{display:block;font-family:var(--f-display);font-weight:400;font-size:clamp(2.4rem,9vw,4rem);line-height:1;font-variant-numeric:tabular-nums}
+.count span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--caramel)}
+.count-foot{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center}
+
+/* program */
+.program{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,56px);margin-top:28px}
+.program h3{font-family:var(--f-body);font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--paper);padding-bottom:10px;border-bottom:1px solid var(--line-d);margin-bottom:6px;line-height:1.2}
+.program ol{list-style:none;margin:0;padding:0}
+.program li{display:grid;grid-template-columns:2.4rem 1fr;gap:8px;padding:12px 0;border-bottom:1px dashed var(--line-d)}
+.program li .n{font-family:var(--f-display);color:var(--caramel);font-size:1.1rem}
+.program li b{display:block;font-weight:600}
+.program li small{color:var(--soft-d);font-size:.88rem}
+.program li.hi b{color:var(--paper)}
+@media (max-width:760px){.program{grid-template-columns:minmax(0,1fr)}}
+
+/* dress code */
+.dress{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(24px,5vw,56px);align-items:start}
+.dress .big{font-family:var(--f-display);font-size:clamp(2.2rem,6vw,3.2rem);line-height:1}
+.dress .txt{display:grid;gap:12px;margin-top:14px;max-width:28rem;color:var(--ink-soft)}
+.swatches{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:22px}
+.sw{display:grid;justify-items:center;gap:6px;font-size:.7rem;color:var(--ink-soft);width:54px;text-align:center;line-height:1.2}
+.sw i{width:34px;height:34px;border-radius:50%;border:1px solid var(--line-l)}
+.rule{margin-top:26px;display:flex;gap:14px;align-items:flex-start;border:1.5px solid var(--ink);padding:14px 16px;max-width:30rem;transform:rotate(-.6deg);background:var(--cream)}
+.rule b{font-family:var(--f-display);font-weight:400;font-size:1.3rem;display:block;line-height:1.1}
+.rule .x{flex:none;width:34px;height:34px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center}
+.rule .x svg{width:13px;height:13px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tabs button{appearance:none;border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:9px 14px;font:600 .72rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;min-height:40px}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--cream)}
+.lookbook{background:var(--cream);padding:10px;box-shadow:0 12px 26px rgba(58,36,25,.25);transform:rotate(.6deg);overflow-x:auto}
+.lookbook img{width:100%;min-width:520px}
+.dress .hand{font-size:1.5rem;color:var(--rust);margin-top:14px;display:inline-block;transform:rotate(-2deg)}
+@media (max-width:760px){.dress{grid-template-columns:minmax(0,1fr)}}
+
+/* venue */
+.venue{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,5vw,56px)}
+.scrap{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.scrap button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;background:var(--coffee);display:block}
+.scrap button:focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+.scrap img{width:100%;height:100%;object-fit:cover;filter:saturate(.92) sepia(.12);transition:transform .5s}
+.scrap button:hover img{transform:scale(1.04)}
+.scrap .f1{grid-column:1/5;aspect-ratio:4/3}.scrap .f2{grid-column:5/7;aspect-ratio:auto}.scrap .f3,.scrap .f4,.scrap .f5{grid-column:span 2;aspect-ratio:1}.scrap .f6{grid-column:1/4;aspect-ratio:3/2}.scrap .f7{grid-column:4/7;aspect-ratio:3/2}
+.scrap .cap{position:absolute;left:8px;bottom:6px;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;background:rgba(33,24,18,.82);padding:4px 7px}
+.scrap .play{position:absolute;inset:0;display:grid;place-items:center;background:rgba(33,24,18,.2)}
+.scrap .play i{width:52px;height:52px;border-radius:50%;background:rgba(244,233,213,.92);color:var(--ink);display:grid;place-items:center}
+.scrap .play svg{width:18px;height:18px;margin-left:3px}
+.venue h3{font-size:clamp(2.2rem,6vw,3.2rem);color:var(--paper);margin:6px 0 10px}
+.venue ul{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px;color:#e3d4bb}
+.venue li{padding-left:18px;position:relative}
+.venue li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--rust)}
+.mapbox{margin-top:18px;aspect-ratio:16/11;max-width:100%;border:1px solid var(--line-d);background:var(--coffee-2)}
+.mapbox iframe{width:100%;height:100%;border:0;filter:sepia(.3) saturate(.8)}
+@media (max-width:760px){.venue{grid-template-columns:minmax(0,1fr)}}
+
+/* lineup */
+.lineup{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(22px,4vw,40px);margin-top:30px;align-items:start}
+.act .frame{aspect-ratio:4/3;background:var(--coffee);border:8px solid var(--cream);box-shadow:0 10px 24px rgba(58,36,25,.35);overflow:hidden}
+.act .frame img{width:100%;height:100%;object-fit:cover;filter:sepia(.3) saturate(.85) contrast(1.03)}
+.act:nth-child(2){margin-top:46px}
+.act:nth-child(2) .frame{transform:rotate(1.5deg)} .act:first-child .frame{transform:rotate(-1deg)}
+.act .role{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--caramel);display:block;margin-top:16px}
+.act h4{font-family:var(--f-display);font-weight:400;font-size:clamp(2rem,5vw,2.6rem);margin:6px 0 8px;line-height:1}
+.act dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 16px;border-top:1px solid var(--line-l);padding-top:10px}
+.act dt{font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--caramel);line-height:1.9}
+.act dd{margin:0;color:var(--ink)}
+.with{display:flex;gap:14px;align-items:center;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line-l)}
+.with img{width:88px;height:66px;object-fit:cover;border:5px solid var(--cream);box-shadow:0 6px 14px rgba(58,36,25,.25);transform:rotate(-3deg)}
+.with b{display:block;font-family:var(--f-display);font-weight:400;font-size:1.35rem;line-height:1.1}
+.scribble{font-family:var(--f-hand);color:var(--rust);font-size:1.9rem;transform:rotate(-5deg);display:inline-block;margin-top:24px}
+@media (max-width:760px){.lineup{grid-template-columns:minmax(0,1fr)}.act:nth-child(2){margin-top:0}}
+
+/* mood */
+.mood{columns:3 200px;column-gap:12px}
+.mood figure{margin:0 0 12px;break-inside:avoid;background:var(--cream);padding:7px 7px 0}
+.mood img{width:100%;filter:saturate(.88) sepia(.15)}
+.mood figure:nth-child(odd){transform:rotate(-1.4deg)} .mood figure:nth-child(even){transform:rotate(1.1deg)}
+.mood figcaption{font-family:var(--f-hand);color:var(--ink);font-size:1.15rem;padding:4px 2px 6px}
+
+/* rsvp */
+.rsvp{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(24px,5vw,56px);align-items:start}
+.fee{font-family:var(--f-display);font-size:clamp(3rem,10vw,4.6rem);line-height:1;color:var(--ink)}
+.fee small{font-family:var(--f-body);font-size:.95rem;color:var(--ink-soft);white-space:nowrap}
+.steps{list-style:none;padding:0;margin:18px 0 0;counter-reset:s;display:grid;gap:8px;color:var(--ink-soft);max-width:26rem}
+.steps li{counter-increment:s;display:grid;grid-template-columns:26px 1fr;gap:10px}
+.steps li::before{content:counter(s);width:24px;height:24px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;font:600 .74rem/1 var(--f-body);color:var(--ink)}
+.pay{display:grid;gap:12px;margin-top:22px}
+.acct{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--cream);border:1px solid var(--line-l);padding:14px 16px}
+.logo{width:58px;height:38px;border-radius:4px;display:grid;place-items:center;font:700 .82rem/1 var(--f-body);color:#fff}
+.logo.bri{background:#00529C}.logo.spay{background:#EE4D2D;font-size:.6rem}
+.acct b{display:block;font-variant-numeric:tabular-nums;font-size:1.08rem;letter-spacing:.04em;color:var(--ink)}
+.acct small{color:var(--ink-soft);font-size:.8rem}
+.copy{border:1px solid var(--ink);background:none;color:var(--ink);font:600 .7rem var(--f-body);letter-spacing:.12em;text-transform:uppercase;padding:9px 10px;min-height:40px;cursor:pointer}
+form{background:var(--cream);border:1px solid var(--line-l);padding:clamp(18px,4vw,28px);display:grid;gap:18px;position:relative;color:var(--ink)}
+form::before{content:"";position:absolute;top:-12px;right:30px;width:110px;height:24px;background:rgba(155,103,66,.35);transform:rotate(3deg)}
+.field{display:grid;gap:6px;min-width:0}
+.field>label,.legend{font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--caramel)}
+input[type=text],input[type=tel],textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:transparent;border:0;border-bottom:1.5px solid var(--ink-soft);padding:10px 2px;border-radius:0}
+input:focus,textarea:focus{outline:none;border-color:var(--rust)}
+textarea{min-height:80px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.choice label{position:relative;font-size:.95rem;color:var(--ink);font-weight:500;border:1.5px solid var(--ink);padding:12px;text-align:center;cursor:pointer}
+.choice input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.choice label:has(input:checked){background:var(--ink);color:var(--cream)}
+.choice label:has(input:focus-visible){outline:2px solid var(--rust);outline-offset:2px}
+.drop{position:relative;border:1.5px dashed var(--caramel);padding:16px;text-align:center;font-size:.92rem;color:var(--ink-soft);display:grid;gap:8px;justify-items:center}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.drop:focus-within{border-color:var(--rust)}
+.drop img{max-height:180px;border:1px solid var(--line-l)}
+.bad{border-color:#b3412c!important}
+.err{color:#a03a24;font-size:.92rem}
+.done{background:var(--coffee);color:var(--cream);padding:22px 22px;display:grid;gap:12px;transform:rotate(-.5deg);box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.done b{font-family:var(--f-display);font-weight:400;font-size:1.6rem;line-height:1.1}
+.done p{color:#e3d4bb;font-size:.95rem}
+.done code{font-family:var(--f-body);font-weight:600;letter-spacing:.12em;color:#e8a978}
+.btn.wa{background:#2f7d4f;border-color:#2f7d4f}.btn.wa:hover{background:#25663f}
+@media (max-width:760px){.rsvp{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.two{grid-template-columns:minmax(0,1fr)}}
+
+/* promcam */
+.cam{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(22px,5vw,48px);align-items:center}
+.cam .qrcard{background:var(--cream);padding:14px 14px 10px;transform:rotate(-3deg);box-shadow:0 14px 28px rgba(0,0,0,.4);width:220px;margin:0}
+.cam .qrcard img{width:100%;image-rendering:pixelated}
+.cam .qrcard figcaption{font-family:var(--f-hand);color:var(--ink);text-align:center;font-size:1.35rem;margin-top:4px}
+.cam ol{margin:14px 0 20px;padding-left:1.2em;color:#e3d4bb;display:grid;gap:6px;max-width:32rem}
+@media (max-width:640px){.cam{grid-template-columns:minmax(0,1fr)}.cam .qrcard{justify-self:center}}
+
+/* guestbook */
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,56px)}
+.tally{display:flex;gap:28px;margin-top:20px}
+.tally b{font-family:var(--f-display);font-weight:400;font-size:3rem;line-height:1;display:block;font-variant-numeric:tabular-nums}
+.tally span{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.pages{background:var(--cream);color:var(--ink);padding:10px 24px;background-image:repeating-linear-gradient(transparent 0 31px,rgba(58,36,25,.12) 31px 32px);min-height:240px;max-height:32rem;overflow:auto;border:1px solid var(--line-l)}
+.empty{font-family:var(--f-hand);font-size:1.8rem;line-height:1.1;color:var(--ink-soft);max-width:24rem;padding:18px 0}
+.wish{padding:14px 0;border-bottom:1px solid var(--line-l)}
+.wish:last-child{border-bottom:0}
+.wish .who{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.wish .who b{font-weight:600}
+.wish .st{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.wish .st.h{color:#2f6b45}
+.wish p{font-family:var(--f-hand);font-size:1.45rem;line-height:1.15;margin-top:2px;overflow-wrap:anywhere}
+@media (max-width:760px){.book{grid-template-columns:minmax(0,1fr)}}
+
+footer{padding-block:48px calc(56px + env(safe-area-inset-bottom,0px));text-align:center;border-top:1px solid var(--line-d)}
+footer .hand{font-size:2.3rem;color:var(--rust);display:block;margin-bottom:10px}
+footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--soft-d)}
+
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:80;background:rgba(18,12,9,.95);display:grid;place-items:center;padding:calc(60px + env(safe-area-inset-top,0px)) max(12px,env(safe-area-inset-right,0px)) calc(60px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+#lb .stage{width:min(100%,1100px);display:grid;place-items:center}
+#lb img{max-height:calc(100vh - 150px);width:auto;max-width:100%;object-fit:contain}
+#lb iframe{width:min(100%,420px);aspect-ratio:9/16;max-height:calc(100vh - 150px);border:0;background:#000}
+#lb .ctl{position:absolute;width:46px;height:46px;border-radius:50%;border:1px solid var(--line-d);background:rgba(33,24,18,.85);color:var(--cream);cursor:pointer;display:grid;place-items:center;font-size:1.3rem}
+#lb .x{top:calc(12px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px))}
+#lb .prev{left:calc(10px + env(safe-area-inset-left,0px));top:50%} #lb .next{right:calc(10px + env(safe-area-inset-right,0px));top:50%}
+#lb .lbcap{position:absolute;left:0;right:0;bottom:calc(16px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--soft-d);font-size:.84rem;padding:0 16px}
+
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js .rv,.intro-in{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className="js"</script>
+</head>
+<body class="locked">
+
+<!-- OPENING COVER -->
+<div id="cover" role="dialog" aria-modal="true" aria-labelledby="coverTitle">
+  <div class="card">
+    <span class="label">Undangan · Prom Night 2026</span>
+    <h2 id="coverTitle">Prom Night</h2>
+    <div class="date">2–3 November 2026</div>
+    <p class="to">Kepada Kawan S.Tr.Stat</p>
+    <p class="name" id="coverName"></p>
+    <input type="text" id="nameInput" placeholder="Tulis nama kamu" autocomplete="name" aria-label="Nama kamu" hidden>
+    <button class="btn" id="openBtn" type="button">Buka undangan</button>
+    <p class="meta">Musik akan diputar. Bisa dimatikan kapan saja.</p>
+  </div>
+</div>
+
+<nav class="top" aria-label="Navigasi">
+  <div class="wrap">
+    <a class="brand" href="#top">PROM NIGHT<small>2026</small></a>
+    <ul id="menu">
+      <li><a href="#acara">Rundown</a></li><li><a href="#dresscode">Dress code</a></li><li><a href="#lokasi">Lokasi</a></li>
+      <li><a href="#lineup">Lineup</a></li><li><a href="#rsvp">RSVP</a></li><li><a href="#ucapan">Ucapan</a></li>
+    </ul>
+    <button class="musicbtn" id="musicBtn" type="button" aria-pressed="false" aria-label="Putar musik"><i></i><span>We Found Love × I Gotta Feeling</span></button>
+    <button class="menubtn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Buka menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+<audio id="song" src="musik.mp3" preload="none" loop></audio>
+
+<main id="top">
+<!-- HERO -->
+<header class="hero" id="hero">
+  <!-- Foto ilustrasi (Unsplash) -->
+  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1594206629888-32f6bfc2b343?auto=format&fit=crop&w=1600&q=70')"></div>
+  <div class="wrap">
+    <div>
+      <span class="hand invited intro-in d1">You're invited to</span>
+      <h1 class="intro-in d2">PROM<br>NIGHT</h1>
+      <span class="yr intro-in d3">2026</span>
+      <p class="tag intro-in d4">Satu malam, sejuta kenangan.</p>
+      <p class="lede intro-in d4">Dandan maksimal, enjoy sampai larut, dan pulang bawa cerita.</p>
+    </div>
+    <div class="intro-in d5">
+      <p class="side">El Villa Forest<br>Bogor<br>02–03.11.2026</p>
+      <figure class="print tape"><img src="villa-depan.jpg" alt="Bagian depan El Villa Forest" width="1200" height="900"><figcaption>sampai ketemu di sini!</figcaption></figure>
+    </div>
+  </div>
+</header>
+<svg class="edge to-paper" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,6.7 20,19.3 30,13.9 43,17.0 61,5.9 68,20.7 81,19.2 87,12.9 104,8.6 126,22.0 132,4.5 147,22.8 159,8.3 172,4.6 181,12.8 195,8.7 205,8.4 218,9.8 224,20.8 239,16.8 248,23.9 268,6.4 279,18.4 297,22.7 310,20.6 326,10.1 342,21.6 361,14.1 377,4.7 386,19.9 399,7.5 414,18.1 431,11.5 444,14.2 462,14.4 474,13.8 481,4.9 498,23.7 514,11.9 522,14.0 544,19.4 559,21.2 568,14.3 590,15.6 603,9.4 618,23.1 624,19.7 643,21.7 661,20.2 675,15.2 688,5.1 708,15.4 717,14.1 731,11.1 742,14.8 758,16.2 772,4.6 781,7.5 797,21.2 816,19.9 835,9.1 854,17.5 861,4.3 868,19.1 878,6.2 894,10.9 901,7.2 915,7.4 926,18.2 939,10.4 952,4.5 965,12.4 974,6.2 994,14.2 1000,16.1 1000,26 0,26" fill="#E8D5B5"/></svg>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="cell"><span class="label">Sen – Sel</span><b>2–3 Nov 2026</b><small>Check-in 14.00 WIB</small></div>
+    <div class="cell"><span class="label">Tempat</span><b>El Villa Forest</b><small>Bogor · ±9,2 km dari stasiun</small></div>
+    <div class="cell"><span class="label">Iuran</span><b>Rp175.000</b><small>per orang</small></div>
+    <div class="cell cta"><a class="btn" href="#rsvp">Konfirmasi &amp; bayar →</a></div>
+  </div>
+</div>
+<svg class="edge to-dark" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,23.1 21,5.1 29,20.7 46,17.4 57,16.1 73,15.6 81,12.6 94,18.5 116,23.0 130,12.9 141,4.7 147,13.3 158,11.6 178,14.5 193,8.7 200,10.5 208,14.2 230,17.5 239,21.9 258,18.7 278,19.3 297,11.1 318,23.2 327,19.1 345,13.2 359,13.8 380,14.0 399,11.1 419,22.0 433,15.4 453,18.5 467,8.4 478,18.0 487,22.2 497,22.2 508,23.1 526,14.1 540,17.0 555,10.2 565,14.2 585,16.5 593,20.4 610,22.2 619,18.9 626,17.1 637,8.5 657,6.1 671,21.1 681,8.2 701,12.5 719,4.6 730,7.4 747,5.7 768,4.5 786,4.4 796,20.3 805,7.7 822,11.7 828,23.8 837,4.7 848,16.3 866,6.3 878,4.6 891,19.3 909,22.0 927,21.2 944,13.5 954,17.2 965,6.0 978,21.5 986,15.7 998,14.3 1000,23.2 1000,26 0,26" fill="#211812"/></svg>
+
+<!-- LETTER -->
+<section class="dark pad" id="undangan">
+  <div class="wrap letter">
+    <div class="rv">
+      <div class="kicker label">Undangan</div>
+      <h2 class="h2">Kamu diundang<span class="hand">ke pesta kita</span></h2>
+      <div class="body">
+        <p>Dengan senang hati kami mengundang <b id="letterName">kamu</b> ke Prom Night 2026 di El Villa Forest, Bogor. Kita mulai dari game sore dan makan malam bareng, lanjut live music dari teman sendiri, lalu DJ set dengan dance perform. Paginya sarapan bareng sebelum pulang.</p>
+        <p>Kursimu aman setelah kamu konfirmasi dan kirim bukti bayar lewat form di bawah.</p>
+        <p class="sign">Panitia Prom Night</p>
+      </div>
+    </div>
+    <div class="collage rv">
+      <figure class="print tape a"><img loading="lazy" src="https://images.unsplash.com/photo-1714972383578-f5bf00cbc41a?auto=format&fit=crop&w=800&q=70" alt="Suasana party"><figcaption>party night</figcaption></figure>
+      <figure class="print b"><img loading="lazy" src="villa-kolam.jpg" alt="Kolam renang villa"><figcaption>after party?</figcaption></figure>
+    </div>
+  </div>
+</section>
+<svg class="edge to-paper" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,6.7 20,19.3 30,13.9 43,17.0 61,5.9 68,20.7 81,19.2 87,12.9 104,8.6 126,22.0 132,4.5 147,22.8 159,8.3 172,4.6 181,12.8 195,8.7 205,8.4 218,9.8 224,20.8 239,16.8 248,23.9 268,6.4 279,18.4 297,22.7 310,20.6 326,10.1 342,21.6 361,14.1 377,4.7 386,19.9 399,7.5 414,18.1 431,11.5 444,14.2 462,14.4 474,13.8 481,4.9 498,23.7 514,11.9 522,14.0 544,19.4 559,21.2 568,14.3 590,15.6 603,9.4 618,23.1 624,19.7 643,21.7 661,20.2 675,15.2 688,5.1 708,15.4 717,14.1 731,11.1 742,14.8 758,16.2 772,4.6 781,7.5 797,21.2 816,19.9 835,9.1 854,17.5 861,4.3 868,19.1 878,6.2 894,10.9 901,7.2 915,7.4 926,18.2 939,10.4 952,4.5 965,12.4 974,6.2 994,14.2 1000,16.1 1000,26 0,26" fill="#E8D5B5"/></svg>
+
+<!-- COUNTDOWN -->
+<section class="paper pad" id="hitung" style="padding-block:56px">
+  <div class="wrap rv">
+    <div class="kicker label">Menuju malamnya</div>
+    <h2 class="h2">Tinggal <span id="daysLeft">beberapa</span> hari lagi</h2>
+    <div class="count"><div><b id="cd-d">00</b><span>Hari</span></div><div><b id="cd-h">00</b><span>Jam</span></div><div><b id="cd-m">00</b><span>Menit</span></div><div><b id="cd-s">00</b><span>Detik</span></div></div>
+    <div class="count-foot">
+      <a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Prom%20Night%202026&dates=20261102T070000Z%2F20261103T050000Z&ctz=Asia%2FJakarta&location=El%20Villa%20Forest%20Bogor&details=Prom%20Night%202026%20di%20El%20Villa%20Forest%2C%20Bogor.%20Check-in%2014.00%20WIB.">Simpan di kalender</a>
+      <span class="muted-l" style="font-size:.86rem">Menuju check-in Senin, 2 November 2026 pukul 14.00 WIB.</span>
+    </div>
+  </div>
+</section>
+<svg class="edge to-dark" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,23.1 21,5.1 29,20.7 46,17.4 57,16.1 73,15.6 81,12.6 94,18.5 116,23.0 130,12.9 141,4.7 147,13.3 158,11.6 178,14.5 193,8.7 200,10.5 208,14.2 230,17.5 239,21.9 258,18.7 278,19.3 297,11.1 318,23.2 327,19.1 345,13.2 359,13.8 380,14.0 399,11.1 419,22.0 433,15.4 453,18.5 467,8.4 478,18.0 487,22.2 497,22.2 508,23.1 526,14.1 540,17.0 555,10.2 565,14.2 585,16.5 593,20.4 610,22.2 619,18.9 626,17.1 637,8.5 657,6.1 671,21.1 681,8.2 701,12.5 719,4.6 730,7.4 747,5.7 768,4.5 786,4.4 796,20.3 805,7.7 822,11.7 828,23.8 837,4.7 848,16.3 866,6.3 878,4.6 891,19.3 909,22.0 927,21.2 944,13.5 954,17.2 965,6.0 978,21.5 986,15.7 998,14.3 1000,23.2 1000,26 0,26" fill="#211812"/></svg>
+
+<!-- RUNDOWN -->
+<section class="dark pad" id="acara">
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker label">Susunan acara</div>
+      <h2 class="h2">Rundown<span class="hand">2–3 Nov</span></h2>
+      <p class="muted-d" style="margin-top:12px">Jam pasti tiap sesi diumumkan panitia acara mendekati hari H.</p>
+    </div>
+    <div class="program rv">
+      <div><h3>Senin · 2 November</h3><ol>
+        <li><span class="n">01</span><div><b>Kumpul di stasiun</b><small>Berangkat bareng naik Gojek, ongkos PP termasuk iuran.</small></div></li>
+        <li><span class="n">02</span><div><b>Check-in villa · 14.00 WIB</b><small>Taruh barang, siap-siap.</small></div></li>
+        <li><span class="n">03</span><div><b>Game sore</b><small>Sebelum maghrib, pemanasan sebelum prom.</small></div></li>
+        <li><span class="n">04</span><div><b>Makan malam</b><small>Catering untuk semua peserta.</small></div></li>
+        <li class="hi"><span class="n">05</span><div><b>Prom Night</b><small>Dipandu dua MC.</small></div></li>
+        <li class="hi"><span class="n">06</span><div><b>Live music</b><small>Vokal dan gitar dari teman sendiri.</small></div></li>
+        <li class="hi"><span class="n">07</span><div><b>DJ set &amp; dance perform</b><small>Party sampai larut.</small></div></li>
+      </ol></div>
+      <div><h3>Selasa · 3 November</h3><ol>
+        <li><span class="n">08</span><div><b>Sarapan</b><small>Catering pagi.</small></div></li>
+        <li><span class="n">09</span><div><b>Santai &amp; foto-foto</b><small>Ambil foto terakhir di villa.</small></div></li>
+        <li><span class="n">10</span><div><b>Check-out</b><small>Pulang ke stasiun naik Gojek.</small></div></li>
+      </ol></div>
+    </div>
+  </div>
+</section>
+<svg class="edge to-paper" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,6.7 20,19.3 30,13.9 43,17.0 61,5.9 68,20.7 81,19.2 87,12.9 104,8.6 126,22.0 132,4.5 147,22.8 159,8.3 172,4.6 181,12.8 195,8.7 205,8.4 218,9.8 224,20.8 239,16.8 248,23.9 268,6.4 279,18.4 297,22.7 310,20.6 326,10.1 342,21.6 361,14.1 377,4.7 386,19.9 399,7.5 414,18.1 431,11.5 444,14.2 462,14.4 474,13.8 481,4.9 498,23.7 514,11.9 522,14.0 544,19.4 559,21.2 568,14.3 590,15.6 603,9.4 618,23.1 624,19.7 643,21.7 661,20.2 675,15.2 688,5.1 708,15.4 717,14.1 731,11.1 742,14.8 758,16.2 772,4.6 781,7.5 797,21.2 816,19.9 835,9.1 854,17.5 861,4.3 868,19.1 878,6.2 894,10.9 901,7.2 915,7.4 926,18.2 939,10.4 952,4.5 965,12.4 974,6.2 994,14.2 1000,16.1 1000,26 0,26" fill="#E8D5B5"/></svg>
+
+<!-- DRESS CODE -->
+<section class="paper pad" id="dresscode">
+  <div class="wrap dress">
+    <div class="rv">
+      <div class="kicker label">Dress code</div>
+      <p class="big">Formal untuk malam prom.</p>
+      <div class="txt">
+        <p>Keluarkan outfit terbaikmu: kemeja atau dress yang rapi, bawahan formal, dan wajib bersepatu. Bawa jaket juga, udara Bogor dingin di malam hari.</p>
+        <p style="font-size:.88rem">Contoh outfit hanya gambaran. Pakai yang terbaik yang kamu punya, tidak harus sama persis.</p>
+      </div>
+      <div class="swatches" aria-label="Warna yang cocok">
+        <div class="sw"><i style="background:#3b2418"></i>Cokelat tua</div><div class="sw"><i style="background:#9b6742"></i>Cokelat muda</div><div class="sw"><i style="background:#efe3cc"></i>Krem</div>
+        <div class="sw"><i style="background:#d6bf98"></i>Beige</div><div class="sw"><i style="background:#1c1714"></i>Hitam</div><div class="sw"><i style="background:#6f6a3c"></i>Hijau zaitun</div>
+      </div>
+      <div class="rule" role="note"><span class="x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Dilarang keras membawa minuman keras.</b><small class="muted-l">Berlaku untuk semua peserta selama acara.</small></div></div>
+    </div>
+    <div class="rv">
+      <div class="tabs" role="tablist" aria-label="Kategori outfit">
+        <button type="button" role="tab" id="t-cowok" aria-controls="p-cowok" aria-selected="true">Cowok</button>
+        <button type="button" role="tab" id="t-cewek" aria-controls="p-cewek" aria-selected="false" tabindex="-1">Cewek</button>
+        <button type="button" role="tab" id="t-hijab" aria-controls="p-hijab" aria-selected="false" tabindex="-1">Cewek berhijab</button>
+      </div>
+      <!-- Potongan "Formal Prom Style Guide" (ilustrasi, bukan peserta) -->
+      <div class="lookbook" role="tabpanel" id="p-cowok" aria-labelledby="t-cowok"><img loading="lazy" src="outfit-cowok.jpg" width="624" height="279" alt="Contoh outfit cowok: kemeja putih, hitam, biru, atau beige dengan celana kain"></div>
+      <div class="lookbook" role="tabpanel" id="p-cewek" aria-labelledby="t-cewek" hidden><img loading="lazy" src="outfit-cewek.jpg" width="599" height="284" alt="Contoh outfit cewek: gaun panjang, gaun satin, gaun glitter, dress midi, dress simple, dress motif"></div>
+      <div class="lookbook" role="tabpanel" id="p-hijab" aria-labelledby="t-hijab" hidden><img loading="lazy" src="outfit-hijab.jpg" width="464" height="284" alt="Contoh outfit cewek berhijab: gaun panjang, dress formal, setelan, dress satin, dress motif"></div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:16px">
+        <button class="btn line" type="button" id="guideBtn">Lihat panduan lengkap</button>
+        <span class="hand">look good, feel good!</span>
+      </div>
+    </div>
+  </div>
+</section>
+<svg class="edge to-dark" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,23.1 21,5.1 29,20.7 46,17.4 57,16.1 73,15.6 81,12.6 94,18.5 116,23.0 130,12.9 141,4.7 147,13.3 158,11.6 178,14.5 193,8.7 200,10.5 208,14.2 230,17.5 239,21.9 258,18.7 278,19.3 297,11.1 318,23.2 327,19.1 345,13.2 359,13.8 380,14.0 399,11.1 419,22.0 433,15.4 453,18.5 467,8.4 478,18.0 487,22.2 497,22.2 508,23.1 526,14.1 540,17.0 555,10.2 565,14.2 585,16.5 593,20.4 610,22.2 619,18.9 626,17.1 637,8.5 657,6.1 671,21.1 681,8.2 701,12.5 719,4.6 730,7.4 747,5.7 768,4.5 786,4.4 796,20.3 805,7.7 822,11.7 828,23.8 837,4.7 848,16.3 866,6.3 878,4.6 891,19.3 909,22.0 927,21.2 944,13.5 954,17.2 965,6.0 978,21.5 986,15.7 998,14.3 1000,23.2 1000,26 0,26" fill="#211812"/></svg>
+
+<!-- VENUE -->
+<section class="dark pad" id="lokasi">
+  <div class="wrap venue">
+    <div class="scrap rv" id="gallery">
+      <button class="f1" type="button" data-i="0"><img loading="lazy" src="villa-depan.jpg" alt="Bagian depan villa"><span class="cap">Depan villa</span></button>
+      <button class="f2" type="button" data-video="1GW9APXU4SmFI0ZYh7hMw0PE6cycqxYSs"><img loading="lazy" src="villa-teras.jpg" alt="Video tur villa"><span class="play"><i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></i></span><span class="cap">Video tur</span></button>
+      <button class="f3" type="button" data-i="1"><img loading="lazy" src="villa-kolam.jpg" alt="Kolam renang"><span class="cap">Kolam</span></button>
+      <button class="f4" type="button" data-i="2"><img loading="lazy" src="villa-ruang.jpg" alt="Ruang tengah"><span class="cap">Ruang tengah</span></button>
+      <button class="f5" type="button" data-i="3"><img loading="lazy" src="villa-biliar.jpg" alt="Ruang biliar"><span class="cap">Biliar</span></button>
+      <button class="f6" type="button" data-i="4"><img loading="lazy" src="villa-taman.jpg" alt="Taman villa"><span class="cap">Taman</span></button>
+      <button class="f7" type="button" data-video="17YhCGTKgy0bjOF_scASmWjsHHjVf07rh"><img loading="lazy" src="villa-hutan.jpg" alt="Video tur villa 2"><span class="play"><i><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></i></span><span class="cap">Video 2</span></button>
+    </div>
+    <div class="rv">
+      <div class="kicker label">Lokasi</div>
+      <h3>El Villa Forest</h3>
+      <p class="muted-d" style="margin-bottom:16px">Bogor, Jawa Barat</p>
+      <ul><li>Villa disewa penuh untuk kita.</li><li>Sekitar 9,2 km dari stasiun. Gojek pulang-pergi sudah termasuk iuran.</li><li>Check-in Senin, 2 November pukul 14.00 WIB.</li></ul>
+      <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=El%20Villa%20Forest%20Bogor">Buka di Maps</a><a class="btn line" target="_blank" rel="noopener" href="https://www.instagram.com/elvillaforest/">Instagram villa</a></div>
+      <div class="mapbox"><iframe loading="lazy" title="Peta El Villa Forest, Bogor" src="https://www.google.com/maps?q=El%20Villa%20Forest%20Bogor&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+<svg class="edge to-paper" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,6.7 20,19.3 30,13.9 43,17.0 61,5.9 68,20.7 81,19.2 87,12.9 104,8.6 126,22.0 132,4.5 147,22.8 159,8.3 172,4.6 181,12.8 195,8.7 205,8.4 218,9.8 224,20.8 239,16.8 248,23.9 268,6.4 279,18.4 297,22.7 310,20.6 326,10.1 342,21.6 361,14.1 377,4.7 386,19.9 399,7.5 414,18.1 431,11.5 444,14.2 462,14.4 474,13.8 481,4.9 498,23.7 514,11.9 522,14.0 544,19.4 559,21.2 568,14.3 590,15.6 603,9.4 618,23.1 624,19.7 643,21.7 661,20.2 675,15.2 688,5.1 708,15.4 717,14.1 731,11.1 742,14.8 758,16.2 772,4.6 781,7.5 797,21.2 816,19.9 835,9.1 854,17.5 861,4.3 868,19.1 878,6.2 894,10.9 901,7.2 915,7.4 926,18.2 939,10.4 952,4.5 965,12.4 974,6.2 994,14.2 1000,16.1 1000,26 0,26" fill="#E8D5B5"/></svg>
+
+<!-- LINEUP -->
+<section class="paper pad" id="lineup">
+  <div class="wrap">
+    <div class="rv"><div class="kicker label">Hiburan malam</div><h2 class="h2">Lineup<span class="hand">malam ini</span></h2></div>
+    <div class="lineup">
+      <article class="act rv">
+        <div class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1646177184147-06d8976a2656?auto=format&fit=crop&w=1000&h=750&q=70" alt="Ilustrasi live music akustik"></div>
+        <span class="role">Vokal &amp; gitar</span>
+        <h4>Live Music</h4>
+        <dl><dt>Vokal</dt><dd>Dzulfikri, Adele, Reghita</dd><dt>Gitar</dt><dd>Habib, Samuel, Daniel</dd></dl>
+      </article>
+      <article class="act rv">
+        <div class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1541126274323-dbac58d14741?auto=format&fit=crop&w=1000&h=750&q=70" alt="Ilustrasi DJ set"></div>
+        <span class="role">Penutup malam</span>
+        <h4>DJ Set</h4>
+        <p class="muted-l">Party sampai larut.</p>
+        <div class="with"><img loading="lazy" src="https://images.unsplash.com/photo-1580724430485-ed43daa4b4f3?auto=format&fit=crop&w=240&h=180&q=65" alt="Ilustrasi dance perform"><div><span class="label" style="color:var(--caramel)">Bersama</span><b>Dance perform</b></div></div>
+      </article>
+    </div>
+    <span class="scribble">semua penampil teman kita sendiri ♡</span>
+  </div>
+</section>
+<svg class="edge to-dark" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,23.1 21,5.1 29,20.7 46,17.4 57,16.1 73,15.6 81,12.6 94,18.5 116,23.0 130,12.9 141,4.7 147,13.3 158,11.6 178,14.5 193,8.7 200,10.5 208,14.2 230,17.5 239,21.9 258,18.7 278,19.3 297,11.1 318,23.2 327,19.1 345,13.2 359,13.8 380,14.0 399,11.1 419,22.0 433,15.4 453,18.5 467,8.4 478,18.0 487,22.2 497,22.2 508,23.1 526,14.1 540,17.0 555,10.2 565,14.2 585,16.5 593,20.4 610,22.2 619,18.9 626,17.1 637,8.5 657,6.1 671,21.1 681,8.2 701,12.5 719,4.6 730,7.4 747,5.7 768,4.5 786,4.4 796,20.3 805,7.7 822,11.7 828,23.8 837,4.7 848,16.3 866,6.3 878,4.6 891,19.3 909,22.0 927,21.2 944,13.5 954,17.2 965,6.0 978,21.5 986,15.7 998,14.3 1000,23.2 1000,26 0,26" fill="#211812"/></svg>
+
+<!-- MOODBOARD -->
+<section class="dark pad" id="vibes">
+  <div class="wrap">
+    <div class="rv"><div class="kicker label">Moodboard</div><h2 class="h2" style="margin-bottom:28px">Kira-kira begini<span class="hand">vibes-nya</span></h2></div>
+    <div class="mood rv">
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1763573676620-b3f8b8ed5a72?auto=format&fit=crop&w=700&q=70" alt=""><figcaption>outfit squad</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1559424452-eeb3a13ffe2b?auto=format&fit=crop&w=600&q=70" alt=""><figcaption>disco ball</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1686943662852-0b00148e632a?auto=format&fit=crop&w=700&q=70" alt=""><figcaption>bestie moment</figcaption></figure>
+      <figure><img loading="lazy" src="villa-taman.jpg" alt=""><figcaption>sore di taman villa</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1640162336242-a26771c24e7b?auto=format&fit=crop&w=600&q=70" alt=""><figcaption>prom look</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1581740141458-a093e36f82a6?auto=format&fit=crop&w=700&q=70" alt=""><figcaption>photobooth</figcaption></figure>
+    </div>
+  </div>
+</section>
+<svg class="edge to-paper" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,6.7 20,19.3 30,13.9 43,17.0 61,5.9 68,20.7 81,19.2 87,12.9 104,8.6 126,22.0 132,4.5 147,22.8 159,8.3 172,4.6 181,12.8 195,8.7 205,8.4 218,9.8 224,20.8 239,16.8 248,23.9 268,6.4 279,18.4 297,22.7 310,20.6 326,10.1 342,21.6 361,14.1 377,4.7 386,19.9 399,7.5 414,18.1 431,11.5 444,14.2 462,14.4 474,13.8 481,4.9 498,23.7 514,11.9 522,14.0 544,19.4 559,21.2 568,14.3 590,15.6 603,9.4 618,23.1 624,19.7 643,21.7 661,20.2 675,15.2 688,5.1 708,15.4 717,14.1 731,11.1 742,14.8 758,16.2 772,4.6 781,7.5 797,21.2 816,19.9 835,9.1 854,17.5 861,4.3 868,19.1 878,6.2 894,10.9 901,7.2 915,7.4 926,18.2 939,10.4 952,4.5 965,12.4 974,6.2 994,14.2 1000,16.1 1000,26 0,26" fill="#E8D5B5"/></svg>
+
+<!-- RSVP + PAYMENT -->
+<section class="paper pad" id="rsvp">
+  <div class="wrap rsvp">
+    <div class="rv">
+      <div class="kicker label">Konfirmasi &amp; pembayaran</div>
+      <p class="fee">Rp175.000 <small>/ orang</small></p>
+      <ol class="steps"><li>Isi nama, nomor WhatsApp, dan kehadiranmu.</li><li>Kalau hadir, transfer ke salah satu rekening di bawah.</li><li>Upload bukti transfer lalu kirim. Link grup peserta langsung muncul.</li></ol>
+      <div class="pay">
+        <div class="acct"><span class="logo bri" aria-hidden="true">BRI</span><div><b>4698 0101 9419 530</b><small>Bank BRI · a.n. Ni Kadek Dwi Utami</small></div><button class="copy" type="button" data-copy="469801019419530">Salin</button></div>
+        <div class="acct"><span class="logo spay" aria-hidden="true">ShopeePay</span><div><b>0831 1401 1511</b><small>ShopeePay · a.n. SMA</small></div><button class="copy" type="button" data-copy="083114011511">Salin</button></div>
+      </div>
+    </div>
+    <div class="rv">
+      <form id="rsvpForm" novalidate>
+        <div class="two">
+          <div class="field"><label for="f-nama">Nama</label><input type="text" id="f-nama" name="nama" autocomplete="name" required></div>
+          <div class="field"><label for="f-wa">No. WhatsApp</label><input type="tel" id="f-wa" name="wa" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx" required></div>
+        </div>
+        <fieldset class="field" style="border:0;margin:0;padding:0"><legend class="legend" style="margin-bottom:6px">Kehadiran</legend>
+          <div class="choice"><label><input type="radio" name="hadir" value="Hadir" checked>Hadir</label><label><input type="radio" name="hadir" value="Tidak hadir">Tidak hadir</label></div>
+        </fieldset>
+        <div class="field" id="payField"><span class="legend" id="lg-bukti">Bukti transfer · Rp175.000</span>
+          <div class="drop" id="drop"><input type="file" id="f-bukti" name="bukti" accept="image/*" aria-labelledby="lg-bukti">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-7 7"/></svg>
+            <span id="dropText">Ketuk untuk upload screenshot bukti transfer</span><img id="preview" alt="Pratinjau bukti transfer" hidden></div>
+        </div>
+        <div class="field"><label for="f-pesan">Ucapan untuk buku tamu</label><textarea id="f-pesan" name="pesan" placeholder="Tulis ucapan, atau catatan untuk panitia"></textarea></div>
+        <p class="err" id="formErr" role="alert" hidden></p>
+        <button class="btn" type="submit" id="submitBtn">Kirim konfirmasi &amp; bukti</button>
+      </form>
+      <div class="done" id="done" hidden tabindex="-1"></div>
+    </div>
+  </div>
+</section>
+<svg class="edge to-dark" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,23.1 21,5.1 29,20.7 46,17.4 57,16.1 73,15.6 81,12.6 94,18.5 116,23.0 130,12.9 141,4.7 147,13.3 158,11.6 178,14.5 193,8.7 200,10.5 208,14.2 230,17.5 239,21.9 258,18.7 278,19.3 297,11.1 318,23.2 327,19.1 345,13.2 359,13.8 380,14.0 399,11.1 419,22.0 433,15.4 453,18.5 467,8.4 478,18.0 487,22.2 497,22.2 508,23.1 526,14.1 540,17.0 555,10.2 565,14.2 585,16.5 593,20.4 610,22.2 619,18.9 626,17.1 637,8.5 657,6.1 671,21.1 681,8.2 701,12.5 719,4.6 730,7.4 747,5.7 768,4.5 786,4.4 796,20.3 805,7.7 822,11.7 828,23.8 837,4.7 848,16.3 866,6.3 878,4.6 891,19.3 909,22.0 927,21.2 944,13.5 954,17.2 965,6.0 978,21.5 986,15.7 998,14.3 1000,23.2 1000,26 0,26" fill="#211812"/></svg>
+
+<!-- PROMCAM -->
+<section class="dark pad" id="promcam">
+  <div class="wrap cam">
+    <figure class="qrcard rv"><img src="promcam-qr.png" alt="QR code PromCam" width="900" height="900"><figcaption>#promnight2026</figcaption></figure>
+    <div class="rv">
+      <div class="kicker label">PromCam · photo sharing</div>
+      <h2 class="h2">Semua foto<span class="hand">satu album</span></h2>
+      <ol><li>Scan QR ini, atau ketuk tombol di bawah kalau kamu membuka undangan dari HP.</li><li>Kamera PromCam terbuka di browser, tanpa install aplikasi.</li><li>Foto yang kamu ambil langsung masuk album bersama Prom Night.</li></ol>
+      <a class="btn" target="_blank" rel="noopener" href="https://prom-cell.github.io/promcam/#k=hzi8s3qbz5">Buka PromCam</a>
+    </div>
+  </div>
+</section>
+<svg class="edge to-paper" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,6.7 20,19.3 30,13.9 43,17.0 61,5.9 68,20.7 81,19.2 87,12.9 104,8.6 126,22.0 132,4.5 147,22.8 159,8.3 172,4.6 181,12.8 195,8.7 205,8.4 218,9.8 224,20.8 239,16.8 248,23.9 268,6.4 279,18.4 297,22.7 310,20.6 326,10.1 342,21.6 361,14.1 377,4.7 386,19.9 399,7.5 414,18.1 431,11.5 444,14.2 462,14.4 474,13.8 481,4.9 498,23.7 514,11.9 522,14.0 544,19.4 559,21.2 568,14.3 590,15.6 603,9.4 618,23.1 624,19.7 643,21.7 661,20.2 675,15.2 688,5.1 708,15.4 717,14.1 731,11.1 742,14.8 758,16.2 772,4.6 781,7.5 797,21.2 816,19.9 835,9.1 854,17.5 861,4.3 868,19.1 878,6.2 894,10.9 901,7.2 915,7.4 926,18.2 939,10.4 952,4.5 965,12.4 974,6.2 994,14.2 1000,16.1 1000,26 0,26" fill="#E8D5B5"/></svg>
+
+<!-- GUESTBOOK -->
+<section class="paper pad" id="ucapan">
+  <div class="wrap book">
+    <div class="rv">
+      <div class="kicker label">Buku tamu</div>
+      <h2 class="h2">Ucapan<span class="hand">dari kalian</span></h2>
+      <div class="tally"><div><b id="st-h">0</b><span>Hadir</span></div><div><b id="st-t">0</b><span>Tidak hadir</span></div></div>
+    </div>
+    <div class="pages rv" id="wishes" aria-live="polite"><p class="empty">Halaman pertama masih kosong. Tulis ucapanmu, biar jadi kenangan pertama di buku ini.</p></div>
+  </div>
+</section>
+<svg class="edge to-dark" viewBox="0 0 1000 26" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,23.1 21,5.1 29,20.7 46,17.4 57,16.1 73,15.6 81,12.6 94,18.5 116,23.0 130,12.9 141,4.7 147,13.3 158,11.6 178,14.5 193,8.7 200,10.5 208,14.2 230,17.5 239,21.9 258,18.7 278,19.3 297,11.1 318,23.2 327,19.1 345,13.2 359,13.8 380,14.0 399,11.1 419,22.0 433,15.4 453,18.5 467,8.4 478,18.0 487,22.2 497,22.2 508,23.1 526,14.1 540,17.0 555,10.2 565,14.2 585,16.5 593,20.4 610,22.2 619,18.9 626,17.1 637,8.5 657,6.1 671,21.1 681,8.2 701,12.5 719,4.6 730,7.4 747,5.7 768,4.5 786,4.4 796,20.3 805,7.7 822,11.7 828,23.8 837,4.7 848,16.3 866,6.3 878,4.6 891,19.3 909,22.0 927,21.2 944,13.5 954,17.2 965,6.0 978,21.5 986,15.7 998,14.3 1000,23.2 1000,26 0,26" fill="#211812"/></svg>
+</main>
+
+<footer class="dark">
+  <div class="wrap">
+    <span class="hand">sampai ketemu di dance floor!</span>
+    <p class="colo">Prom Night 2026 · El Villa Forest, Bogor · 02–03.11.2026</p>
+  </div>
+</footer>
+
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Galeri">
+  <button class="ctl x" type="button" aria-label="Tutup">×</button>
+  <button class="ctl prev" type="button" aria-label="Sebelumnya">‹</button>
+  <div class="stage" id="lbStage"></div>
+  <button class="ctl next" type="button" aria-label="Berikutnya">›</button>
+  <p class="lbcap" id="lbCap"></p>
+</div>
+
+<script>
+/* ===== Konfigurasi ===== */
+const API = "https://script.google.com/macros/s/AKfycbweqsI4VIIzhOb7raNHwygZuBvqEuoTZ-EBp99XMVPK7Fgfd4Zjo_o7enrdyb_kiSiQ/exec";
+const EVENT_START = "2026-11-02T14:00:00+07:00";
+const GUESTS = {"ami":"Ami","firda":"Firda","yahya":"Yahya","cimi":"Cimi","sherly":"Sherly","fira":"Fira","adel":"Adel","asti":"Asti","yasmin":"Yasmin","shinta":"Shinta","ari":"Ari","rege":"Rege","intan":"Intan","fajar":"Fajar","alfi":"Alfi","iqbalnya-ami":"Iqbal","lsand":"Lsand","sabril":"Sabril","adam":"Adam","habib":"Habib","jauzie":"Jauzie","rahman":"Rahman","wisnu":"Wisnu","hafidh":"Hafidh","dzulfikri":"Dzulfikri","nopal":"Nopal","galang":"Galang","dustin":"Dustin","afif":"Afif","daniel":"Daniel","khaidir":"Khaidir","samuel":"Samuel","dandi":"Dandi","dhuta":"Dhuta","rafa":"Rafa","altytan":"Altytan","dedy":"Dedy","rizky":"Rizky","opal":"Opal","radivan":"Radivan","jeki":"Jeki","faris":"Faris","irfan":"Irfan","toni":"Toni","very":"Very","iqbal":"Iqbal","jati":"Jati","cakra":"Cakra","rifki":"Rifki","fauzan":"Fauzan","aril":"Aril","niko":"Niko","tegar":"Tegar","rahmat":"Rahmat","fatih":"Fatih"};
+
+const $ = id => document.getElementById(id);
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const store = { get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }, set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} } };
+
+/* ===== Nama tamu ===== */
+const qs = new URLSearchParams(location.search);
+const slug = (qs.get("u") || "").toLowerCase().replace(/[^a-z0-9-]/g, "");
+const cap = s => s.replace(/\s+/g, " ").trim().replace(/(^|\s)\S/g, c => c.toUpperCase()).slice(0, 40);
+let guest = GUESTS[slug] || (qs.get("to") ? cap(qs.get("to")) : "") || store.get("prom-guest") || "";
+function applyGuest(n){
+  guest = n;
+  $("coverName").textContent = n || "";
+  $("letterName").textContent = n || "kamu";
+  if (n && !$("f-nama").value) $("f-nama").value = n;
+}
+applyGuest(guest);
+if (!guest) $("nameInput").hidden = false;
+
+/* ===== Musik (diputar hanya setelah tamu menekan tombol) ===== */
+const song = $("song"), mBtn = $("musicBtn");
+function setPlaying(on){ mBtn.classList.toggle("on", on); mBtn.setAttribute("aria-pressed", on); mBtn.setAttribute("aria-label", on ? "Jeda musik" : "Putar musik"); }
+function play(){ const p = song.play(); if (p) p.catch(() => setPlaying(false)); }
+function pause(){ song.pause(); }
+mBtn.addEventListener("click", () => song.paused ? play() : pause());
+song.addEventListener("play", () => setPlaying(true));
+song.addEventListener("pause", () => setPlaying(false));
+
+/* ===== Pembukaan: kartu terangkat, hero masuk ===== */
+const cover = $("cover"), hero = $("hero");
+function startHero(){ hero.classList.add("live"); }
+$("openBtn").addEventListener("click", () => {
+  const typed = $("nameInput").value.trim();
+  if (typed){ applyGuest(cap(typed)); store.set("prom-guest", guest); }
+  play();
+  cover.classList.add("gone");
+  document.body.classList.remove("locked");
+  window.scrollTo(0, 0);
+  setTimeout(startHero, reduce ? 0 : 450);
+  setTimeout(() => { cover.hidden = true; $("openBtn").blur(); }, reduce ? 0 : 1200);
+});
+$("nameInput").addEventListener("keydown", e => { if (e.key === "Enter") $("openBtn").click(); });
+$("openBtn").focus({ preventScroll: true });
+
+/* ===== Menu & reveal ===== */
+$("menuBtn").addEventListener("click", () => { const o = $("menu").classList.toggle("open"); $("menuBtn").setAttribute("aria-expanded", o); });
+$("menu").addEventListener("click", e => { if (e.target.closest("a")){ $("menu").classList.remove("open"); $("menuBtn").setAttribute("aria-expanded", false); } });
+if ("IntersectionObserver" in window){
+  const links = [...document.querySelectorAll("#menu a")];
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) links.forEach(l => l.classList.toggle("on", l.getAttribute("href") === "#" + en.target.id)); }), { rootMargin: "-40% 0px -55% 0px" });
+  ["acara","dresscode","lokasi","lineup","rsvp","ucapan"].forEach(id => io.observe($(id)));
+  const rv = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting){ en.target.classList.add("in"); rv.unobserve(en.target); } }), { threshold: .1 });
+  document.querySelectorAll(".rv").forEach(el => rv.observe(el));
+} else document.querySelectorAll(".rv").forEach(el => el.classList.add("in"));
+
+/* ===== Countdown ===== */
+const target = new Date(EVENT_START).getTime(), pad = n => String(n).padStart(2, "0");
+function tick(){
+  let s = Math.max(0, Math.floor((target - Date.now()) / 1000));
+  const d = Math.floor(s / 86400); s %= 86400; const h = Math.floor(s / 3600); s %= 3600; const m = Math.floor(s / 60); s %= 60;
+  $("cd-d").textContent = pad(d); $("cd-h").textContent = pad(h); $("cd-m").textContent = pad(m); $("cd-s").textContent = pad(s);
+  $("daysLeft").textContent = d > 0 ? d : "hitungan jam";
+}
+tick(); setInterval(tick, 1000);
+
+/* ===== Salin nomor rekening ===== */
+document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => {
+  const t = b.textContent, done = ok => { b.textContent = ok ? "Tersalin" : b.dataset.copy; setTimeout(() => b.textContent = t, 1800); };
+  try { navigator.clipboard.writeText(b.dataset.copy).then(() => done(true), () => done(false)); } catch(e){ done(false); }
+}));
+
+/* ===== Tab dress code ===== */
+const tabs = [...document.querySelectorAll('.tabs [role="tab"]')];
+function selTab(t){ tabs.forEach(x => { const on = x === t; x.setAttribute("aria-selected", on); x.tabIndex = on ? 0 : -1; $(x.getAttribute("aria-controls")).hidden = !on; }); }
+tabs.forEach((t, i) => { t.addEventListener("click", () => selTab(t)); t.addEventListener("keydown", e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft"){ const n = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length]; selTab(n); n.focus(); } }); });
+
+/* ===== Lightbox: galeri villa, video, panduan outfit ===== */
+const photos = [...document.querySelectorAll("#gallery [data-i]")].map(b => ({ src: b.querySelector("img").getAttribute("src"), cap: b.querySelector(".cap").textContent }));
+let lbList = [], lbI = 0, lastFocus = null, resumeMusic = false;
+function lbShow(i){
+  lbI = (i + lbList.length) % lbList.length; const it = lbList[lbI], st = $("lbStage"); st.textContent = "";
+  if (it.video){ const f = document.createElement("iframe"); f.src = "https://drive.google.com/file/d/" + it.video + "/preview"; f.allow = "autoplay; fullscreen"; f.title = it.cap; st.appendChild(f); }
+  else { const im = new Image(); im.src = it.src; im.alt = it.cap; st.appendChild(im); }
+  $("lbCap").textContent = it.cap;
+  document.querySelectorAll("#lb .prev,#lb .next").forEach(b => b.hidden = lbList.length < 2);
+}
+function lbOpen(list, i){
+  lastFocus = document.activeElement; lbList = list; $("lb").hidden = false; document.body.style.overflow = "hidden";
+  if (list[i].video && !song.paused){ resumeMusic = true; pause(); }
+  lbShow(i); $("lb").querySelector(".x").focus();
+}
+function lbClose(){ $("lb").hidden = true; $("lbStage").textContent = ""; document.body.style.overflow = ""; if (resumeMusic){ resumeMusic = false; play(); } if (lastFocus) lastFocus.focus(); }
+$("lb").querySelector(".x").onclick = lbClose;
+$("lb").querySelector(".prev").onclick = () => lbShow(lbI - 1);
+$("lb").querySelector(".next").onclick = () => lbShow(lbI + 1);
+$("lb").addEventListener("click", e => { if (e.target.id === "lb") lbClose(); });
+addEventListener("keydown", e => { if ($("lb").hidden) return; if (e.key === "Escape") lbClose(); if (e.key === "ArrowRight") lbShow(lbI + 1); if (e.key === "ArrowLeft") lbShow(lbI - 1); });
+document.querySelectorAll("#gallery button").forEach(b => b.addEventListener("click", () => {
+  if (b.dataset.video) lbOpen([{ video: b.dataset.video, cap: "Tur El Villa Forest · " + b.querySelector(".cap").textContent }], 0);
+  else lbOpen(photos, +b.dataset.i);
+}));
+$("guideBtn").addEventListener("click", () => lbOpen([{ src: "panduan-outfit.jpg", cap: "Panduan outfit (ilustrasi). Tidak harus sama persis." }], 0));
+
+/* ===== API ===== */
+async function api(payload){
+  const r = await fetch(payload ? API : API + "?a=stats", payload ? { method: "POST", body: JSON.stringify(payload) } : {});
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  return r.json();
+}
+
+/* ===== Buku tamu ===== */
+function renderStats(st){
+  if (!st) return;
+  $("st-h").textContent = st.hadir || 0; $("st-t").textContent = st.tidak || 0;
+  if (!st.wishes || !st.wishes.length) return;
+  const w = $("wishes"); w.textContent = "";
+  st.wishes.forEach(x => {
+    const d = document.createElement("div"); d.className = "wish";
+    const who = document.createElement("div"); who.className = "who";
+    const b = document.createElement("b"); b.textContent = x.n;
+    const s = document.createElement("span"); s.className = "st" + (x.k === "Hadir" ? " h" : ""); s.textContent = x.k;
+    who.append(b, s); d.appendChild(who);
+    if (x.m){ const p = document.createElement("p"); p.textContent = "“" + x.m + "”"; d.appendChild(p); }
+    w.appendChild(d);
+  });
+}
+api().then(renderStats).catch(() => {});
+
+/* ===== Form konfirmasi + pembayaran ===== */
+const form = $("rsvpForm");
+const hadirVal = () => form.querySelector('input[name="hadir"]:checked').value;
+function sync(){ const h = hadirVal() === "Hadir"; $("payField").hidden = !h; $("submitBtn").textContent = h ? "Kirim konfirmasi & bukti" : "Kirim konfirmasi"; }
+form.querySelectorAll('input[name="hadir"]').forEach(r => r.addEventListener("change", sync)); sync();
+
+let bukti = null;
+$("f-bukti").addEventListener("change", async e => {
+  const f = e.target.files[0]; if (!f) return;
+  $("dropText").textContent = "Memproses foto…";
+  try { bukti = await shrink(f); $("preview").src = bukti; $("preview").hidden = false; $("dropText").textContent = "Bukti siap. Ketuk untuk ganti."; $("drop").classList.remove("bad"); }
+  catch(err){ bukti = null; $("dropText").textContent = "Foto tidak bisa dibaca. Coba screenshot lain."; }
+});
+function shrink(file){
+  return new Promise((res, rej) => { const fr = new FileReader(); fr.onerror = rej; fr.onload = () => { const im = new Image(); im.onerror = rej; im.onload = () => {
+    const s = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement("canvas");
+    c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); c.getContext("2d").drawImage(im, 0, 0, c.width, c.height);
+    res(c.toDataURL("image/jpeg", .82)); }; im.src = fr.result; }; fr.readAsDataURL(file); });
+}
+function fail(msg, el){ $("formErr").textContent = msg; $("formErr").hidden = false; if (el){ el.classList.add("bad"); el.scrollIntoView({ block: "center" }); if (el.focus) el.focus(); } }
+form.addEventListener("input", e => { if (e.target.classList) e.target.classList.remove("bad"); $("formErr").hidden = true; });
+
+form.addEventListener("submit", async e => {
+  e.preventDefault(); $("formErr").hidden = true;
+  const nama = $("f-nama").value.trim(), wa = $("f-wa").value.replace(/[^\d+]/g, ""), h = hadirVal();
+  if (nama.length < 2) return fail("Isi nama kamu dulu.", $("f-nama"));
+  if (wa.replace(/\D/g, "").length < 9) return fail("Isi nomor WhatsApp yang aktif.", $("f-wa"));
+  if (h === "Hadir" && !bukti) return fail("Upload bukti transfer Rp175.000 dulu.", $("drop"));
+  const btn = $("submitBtn"); btn.disabled = true; btn.textContent = "Mengirim…";
+  try {
+    const r = await api({ a: "rsvp", slug, nama, wa, hadir: h, pesan: $("f-pesan").value.trim(), bukti: h === "Hadir" ? bukti : "" });
+    if (!r || !r.ok) throw new Error((r && r.error) || "Gagal menyimpan.");
+    store.set("prom-guest", nama);
+    showDone(r, nama, h); renderStats(r.stats);
+  } catch(err){
+    fail("Konfirmasi belum terkirim (" + err.message + "). Coba lagi sebentar, atau hubungi panitia.");
+  } finally { btn.disabled = false; sync(); }
+});
+
+function showDone(r, nama, h){
+  const d = $("done"); d.textContent = "";
+  const t = document.createElement("b"), p = document.createElement("p");
+  if (h === "Hadir"){
+    t.textContent = "Makasih, " + nama + "! Bukti kamu sudah masuk.";
+    p.textContent = "Panitia akan memverifikasi pembayaranmu. Gabung ke grup peserta untuk info teknis dan update terbaru.";
+    d.append(t, p);
+    if (r.code){ const c = document.createElement("p"); c.append("Kode konfirmasi: "); const k = document.createElement("code"); k.textContent = r.code; c.appendChild(k); d.appendChild(c); }
+    if (r.group){ const a = document.createElement("a"); a.className = "btn wa"; a.href = r.group; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Masuk grup WhatsApp peserta"; d.appendChild(a); }
+  } else {
+    t.textContent = "Terima kasih sudah mengabari, " + nama + ".";
+    p.textContent = "Sayang sekali belum bisa ikut. Kalau rencanamu berubah, isi lagi form ini dan pilih Hadir.";
+    d.append(t, p);
+  }
+  form.hidden = true; d.hidden = false; d.focus();
+}
+
+</script>
+</body>
+</html>
