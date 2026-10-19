@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Prom Night 2026</title>
-<meta name="description" content="Undangan Prom Night 2026 · 2–3 November 2026 · El Villa Forest, Bogor">
+<meta name="description" content="Undangan Prom Night 2026 · El Villa Forest, Bogor">
 <meta property="og:title" content="Undangan Prom Night 2026">
-<meta property="og:description" content="Satu malam, sejuta kenangan. 2–3 November 2026 · El Villa Forest, Bogor">
+<meta property="og:description" content="Satu malam, sejuta kenangan. El Villa Forest, Bogor">
 <meta property="og:image" content="https://prom-cell.github.io/promnight/og.jpg">
 <meta name="theme-color" content="#211812">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -183,7 +183,7 @@ section{position:relative}
 .tabs button{appearance:none;border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:9px 14px;font:600 .72rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;min-height:40px}
 .tabs button[aria-selected="true"]{background:var(--ink);color:var(--cream)}
 .lookbook{background:var(--cream);padding:10px;box-shadow:0 12px 26px rgba(58,36,25,.25);transform:rotate(.6deg);overflow-x:auto}
-.lookbook img{width:100%;min-width:520px}
+.lookbook img{width:100%;min-width:560px;cursor:zoom-in}
 .disc{border-left:3px solid var(--rust);background:var(--cream);padding:12px 14px;color:var(--ink)!important;font-size:.95rem}
 .disc b{font-weight:600}
 .dress .hand{font-size:1.5rem;color:var(--rust);margin-top:14px;display:inline-block;transform:rotate(-2deg)}
@@ -243,7 +243,8 @@ section{position:relative}
 .pay{display:grid;gap:12px;margin-top:22px}
 .acct{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--cream);border:1px solid var(--line-l);padding:14px 16px}
 .logo{width:58px;height:38px;border-radius:4px;display:grid;place-items:center;font:700 .82rem/1 var(--f-body);color:#fff}
-.logo.bri{background:#00529C}.logo.spay{background:#EE4D2D;font-size:.6rem}
+.logo.bri{background:#00529C}.logo.spay{background:#EE4D2D;font-size:.6rem}.logo.qris{background:#1d1d1f;font-size:.74rem;letter-spacing:.06em}
+.qbtn{display:flex;gap:6px}@media (max-width:480px){.qbtn{flex-direction:column}.qbtn .copy{justify-content:center}}.qbtn a.copy{display:inline-flex;align-items:center;text-decoration:none}
 .acct b{display:block;font-variant-numeric:tabular-nums;font-size:1.08rem;letter-spacing:.04em;color:var(--ink)}
 .acct small{color:var(--ink-soft);font-size:.8rem}
 .copy{border:1px solid var(--ink);background:none;color:var(--ink);font:600 .7rem var(--f-body);letter-spacing:.12em;text-transform:uppercase;padding:9px 10px;min-height:40px;cursor:pointer}
@@ -325,7 +326,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
   <div class="card">
     <span class="label">Undangan · Prom Night 2026</span>
     <h2 id="coverTitle">Prom Night</h2>
-    <div class="date">2–3 November 2026</div>
+    <div class="date" data-tgl="range">2–3 November 2026</div>
     <p class="to">Kepada Kawan S.Tr.Stat</p>
     <p class="name" id="coverName"></p>
     <input type="text" id="nameInput" placeholder="Tulis nama kamu" autocomplete="name" aria-label="Nama kamu" hidden>
@@ -370,7 +371,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
 
 <div class="strip">
   <div class="wrap">
-    <div class="cell"><span class="label">Sen – Sel</span><b>2–3 Nov 2026</b><small>Check-in 14.00 WIB</small></div>
+    <div class="cell"><span class="label" data-tgl="days">Sen – Sel</span><b data-tgl="rangeS">2–3 Nov 2026</b><small>Check-in 14.00 WIB</small></div>
     <div class="cell"><span class="label">Tempat</span><b>El Villa Forest</b><small>Bogor · ±9,2 km dari stasiun</small></div>
     <div class="cell"><span class="label">Iuran</span><b>Rp175.000</b><small>per orang</small></div>
     <div class="cell cta"><a class="btn" href="#rsvp">Konfirmasi &amp; bayar →</a></div>
@@ -405,8 +406,8 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
     <h2 class="h2">Tinggal <span id="daysLeft">beberapa</span> hari lagi</h2>
     <div class="count"><div><b id="cd-d">00</b><span>Hari</span></div><div><b id="cd-h">00</b><span>Jam</span></div><div><b id="cd-m">00</b><span>Menit</span></div><div><b id="cd-s">00</b><span>Detik</span></div></div>
     <div class="count-foot">
-      <a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Prom%20Night%202026&dates=20261102T070000Z%2F20261103T050000Z&ctz=Asia%2FJakarta&location=El%20Villa%20Forest%20Bogor&details=Prom%20Night%202026%20di%20El%20Villa%20Forest%2C%20Bogor.%20Check-in%2014.00%20WIB.">Simpan di kalender</a>
-      <span class="muted-l" style="font-size:.86rem">Menuju check-in Senin, 2 November 2026 pukul 14.00 WIB.</span>
+      <a class="btn line" id="calBtn" target="_blank" rel="noopener" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Prom%20Night%202026&dates=20261102T070000Z%2F20261103T050000Z&ctz=Asia%2FJakarta&location=El%20Villa%20Forest%20Bogor&details=Prom%20Night%202026%20di%20El%20Villa%20Forest%2C%20Bogor.%20Check-in%2014.00%20WIB.">Simpan di kalender</a>
+      <span class="muted-l" style="font-size:.86rem">Menuju check-in <span data-tgl="d1full">Senin, 2 November 2026</span> pukul 14.00 WIB.</span>
     </div>
   </div>
 </section>
@@ -417,11 +418,11 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
   <div class="wrap">
     <div class="rv">
       <div class="kicker label">Susunan acara</div>
-      <h2 class="h2">Rundown<span class="hand">2–3 Nov</span></h2>
+      <h2 class="h2">Rundown<span class="hand" data-tgl="rangeN">2–3 Nov</span></h2>
       <p class="muted-d" style="margin-top:12px">Jam pasti tiap sesi diumumkan panitia acara mendekati hari H.</p>
     </div>
     <div class="program rv">
-      <div><h3>Senin · 2 November</h3><ol>
+      <div><h3 data-tgl="d1">Senin · 2 November</h3><ol>
         <li><span class="n">01</span><div><b>Kumpul di stasiun</b><small>Berangkat bareng naik Gojek, ongkos PP termasuk iuran.</small></div></li>
         <li><span class="n">02</span><div><b>Check-in villa · 14.00 WIB</b><small>Taruh barang, siap-siap.</small></div></li>
         <li><span class="n">03</span><div><b>Game sore</b><small>Sebelum maghrib, pemanasan sebelum prom.</small></div></li>
@@ -430,7 +431,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
         <li class="hi"><span class="n">06</span><div><b>Live music</b><small>Vokal dan gitar dari teman sendiri.</small></div></li>
         <li class="hi"><span class="n">07</span><div><b>DJ set &amp; dance perform</b><small>Party sampai larut.</small></div></li>
       </ol></div>
-      <div><h3>Selasa · 3 November</h3><ol>
+      <div><h3 data-tgl="d2">Selasa · 3 November</h3><ol>
         <li><span class="n">08</span><div><b>Sarapan</b><small>Catering pagi.</small></div></li>
         <li><span class="n">09</span><div><b>Santai &amp; foto-foto</b><small>Ambil foto terakhir di villa.</small></div></li>
         <li><span class="n">10</span><div><b>Check-out</b><small>Pulang ke stasiun naik Gojek.</small></div></li>
@@ -458,12 +459,12 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
         <button type="button" role="tab" id="t-cewek" aria-controls="p-cewek" aria-selected="false" tabindex="-1">Cewek</button>
         <button type="button" role="tab" id="t-hijab" aria-controls="p-hijab" aria-selected="false" tabindex="-1">Cewek berhijab</button>
       </div>
-      <!-- Potongan "Formal Prom Style Guide" (ilustrasi, bukan peserta) -->
-      <div class="lookbook" role="tabpanel" id="p-cowok" aria-labelledby="t-cowok"><img loading="lazy" src="outfit-cowok.jpg" width="624" height="279" alt="Contoh outfit cowok: kemeja putih, hitam, biru, atau beige dengan celana kain"></div>
-      <div class="lookbook" role="tabpanel" id="p-cewek" aria-labelledby="t-cewek" hidden><img loading="lazy" src="outfit-cewek.jpg" width="599" height="284" alt="Contoh outfit cewek: gaun panjang, gaun satin, gaun glitter, dress midi, dress simple, dress motif"></div>
-      <div class="lookbook" role="tabpanel" id="p-hijab" aria-labelledby="t-hijab" hidden><img loading="lazy" src="outfit-hijab.jpg" width="464" height="284" alt="Contoh outfit cewek berhijab: gaun panjang, dress formal, setelan, dress satin, dress motif"></div>
+      <!-- Papan referensi outfit (ilustrasi, bukan peserta). Klik gambar untuk memperbesar. -->
+      <div class="lookbook" role="tabpanel" id="p-cowok" aria-labelledby="t-cowok"><img loading="lazy" src="outfit-cowok.jpg?v=2" width="1672" height="941" alt="Referensi outfit cowok: kemeja polos berbagai warna dengan celana kain hitam atau krem dan sepatu"></div>
+      <div class="lookbook" role="tabpanel" id="p-cewek" aria-labelledby="t-cewek" hidden><img loading="lazy" src="outfit-cewek.jpg?v=2" width="1536" height="1024" alt="Referensi outfit cewek: gaun panjang elegan berbagai warna dan model"></div>
+      <div class="lookbook" role="tabpanel" id="p-hijab" aria-labelledby="t-hijab" hidden><img loading="lazy" src="outfit-hijab.jpg?v=2" width="1536" height="1024" alt="Referensi outfit cewek berhijab: gaun panjang tertutup berbagai warna"></div>
       <div style="display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:16px">
-        <button class="btn line" type="button" id="guideBtn">Lihat panduan lengkap</button>
+        <button class="btn line" type="button" id="guideBtn">Perbesar gambar</button>
         <span class="hand">look good, feel good!</span>
       </div>
     </div>
@@ -487,7 +488,7 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
       <div class="kicker label">Lokasi</div>
       <h3>El Villa Forest</h3>
       <p class="muted-d" style="margin-bottom:16px">Bogor, Jawa Barat</p>
-      <ul><li>Villa disewa penuh untuk kita.</li><li>Sekitar 9,2 km dari stasiun. Gojek pulang-pergi sudah termasuk iuran.</li><li>Check-in Senin, 2 November pukul 14.00 WIB.</li></ul>
+      <ul><li>Villa disewa penuh untuk kita.</li><li>Sekitar 9,2 km dari stasiun. Gojek pulang-pergi sudah termasuk iuran.</li><li>Check-in <span data-tgl="d1day">Senin, 2 November</span> pukul 14.00 WIB.</li></ul>
       <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=El%20Villa%20Forest%20Bogor">Buka di Maps</a><a class="btn line" target="_blank" rel="noopener" href="https://www.instagram.com/elvillaforest/">Instagram villa</a></div>
       <div class="mapbox"><iframe loading="lazy" title="Peta El Villa Forest, Bogor" src="https://www.google.com/maps?q=El%20Villa%20Forest%20Bogor&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
@@ -542,10 +543,11 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
     <div class="rv">
       <div class="kicker label">Konfirmasi &amp; pembayaran</div>
       <p class="fee">Rp175.000 <small>/ orang</small></p>
-      <ol class="steps"><li>Isi nama, nomor WhatsApp, dan kehadiranmu.</li><li>Kalau hadir, transfer ke salah satu rekening di bawah.</li><li>Upload bukti transfer lalu kirim. Link grup peserta langsung muncul.</li></ol>
+      <ol class="steps"><li>Isi nama, nomor WhatsApp, dan kehadiranmu.</li><li>Kalau hadir, bayar lewat transfer atau scan QRIS di bawah.</li><li>Upload bukti transfer lalu kirim. Link grup peserta langsung muncul.</li></ol>
       <div class="pay">
         <div class="acct"><span class="logo bri" aria-hidden="true">BRI</span><div><b>4698 0101 9419 530</b><small>Bank BRI · a.n. Ni Kadek Dwi Utami</small></div><button class="copy" type="button" data-copy="469801019419530">Salin</button></div>
         <div class="acct"><span class="logo spay" aria-hidden="true">ShopeePay</span><div><b>0831 1401 1511</b><small>ShopeePay · a.n. Ni Kadek Dwi Utami</small></div><button class="copy" type="button" data-copy="083114011511">Salin</button></div>
+        <div class="acct"><span class="logo qris" aria-hidden="true">QRIS</span><div><b>Lsand - Course</b><small>Scan via e-wallet / m-banking</small></div><div class="qbtn"><button class="copy" type="button" id="qrisBtn">Lihat QR</button><a class="copy" href="qris-lsand.jpg" download="QRIS-Prom-Night-2026.jpg">Unduh</a></div></div>
       </div>
     </div>
     <div class="rv">
@@ -618,10 +620,37 @@ footer .colo{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color
 <script>
 /* ===== Konfigurasi ===== */
 const API = "https://script.google.com/macros/s/AKfycbweqsI4VIIzhOb7raNHwygZuBvqEuoTZ-EBp99XMVPK7Fgfd4Zjo_o7enrdyb_kiSiQ/exec";
-const EVENT_START = "2026-11-02T14:00:00+07:00";
+/* ==========================================================
+   >>> UBAH TANGGAL ACARA DI SINI (cukup baris TANGGAL_MULAI) <<<
+   Isi tanggal HARI PERTAMA dengan format "TAHUN-BULAN-TANGGAL".
+   Contoh: acara 4–5 November 2026  ->  "2026-11-04"
+   Hari, tanggal, countdown, rundown, dan tombol kalender
+   otomatis ikut berubah. Jam check-in tetap 14.00 WIB.
+   ========================================================== */
+const TANGGAL_MULAI = "2026-11-02";
+const EVENT_START = TANGGAL_MULAI + "T14:00:00+07:00";
 const GUESTS = {"ami":"Ami","firda":"Firda","yahya":"Yahya","cimi":"Cimi","sherly":"Sherly","fira":"Fira","adel":"Adel","asti":"Asti","yasmin":"Yasmin","shinta":"Shinta","ari":"Ari","rege":"Rege","intan":"Intan","fajar":"Fajar","alfi":"Alfi","iqbalnya-ami":"Iqbal","lsand":"Lsand","sabril":"Sabril","adam":"Adam","habib":"Habib","jauzie":"Jauzie","rahman":"Rahman","wisnu":"Wisnu","hafidh":"Hafidh","dzulfikri":"Dzulfikri","nopal":"Nopal","galang":"Galang","dustin":"Dustin","afif":"Afif","daniel":"Daniel","khaidir":"Khaidir","samuel":"Samuel","dandi":"Dandi","dhuta":"Dhuta","rafa":"Rafa","altytan":"Altytan","dedy":"Dedy","rizky":"Rizky","opal":"Opal","radivan":"Radivan","jeki":"Jeki","faris":"Faris","irfan":"Irfan","toni":"Toni","very":"Very","iqbal":"Iqbal","jati":"Jati","cakra":"Cakra","rifki":"Rifki","fauzan":"Fauzan","aril":"Aril","niko":"Niko","tegar":"Tegar","rahmat":"Rahmat","fatih":"Fatih"};
 
 const $ = id => document.getElementById(id);
+
+/* ===== Tanggal otomatis dari TANGGAL_MULAI (tidak perlu diubah) ===== */
+(function(){
+  const HARI = ["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"], BLN = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+  const [y, m, d] = TANGGAL_MULAI.split("-").map(Number), a = new Date(Date.UTC(y, m - 1, d)), b = new Date(Date.UTC(y, m - 1, d + 1));
+  const D = x => x.getUTCDate(), M = x => BLN[x.getUTCMonth()], S = x => M(x).slice(0, 3), Y = x => x.getUTCFullYear(), H = x => HARI[x.getUTCDay()];
+  const one = a.getUTCMonth() === b.getUTCMonth();
+  const T = {
+    range:  one ? `${D(a)}–${D(b)} ${M(a)} ${Y(b)}` : `${D(a)} ${M(a)} – ${D(b)} ${M(b)} ${Y(b)}`,
+    rangeS: one ? `${D(a)}–${D(b)} ${S(a)} ${Y(b)}` : `${D(a)} ${S(a)} – ${D(b)} ${S(b)} ${Y(b)}`,
+    rangeN: one ? `${D(a)}–${D(b)} ${S(a)}` : `${D(a)} ${S(a)} – ${D(b)} ${S(b)}`,
+    days: `${H(a).slice(0, 3)} – ${H(b).slice(0, 3)}`,
+    d1: `${H(a)} · ${D(a)} ${M(a)}`, d2: `${H(b)} · ${D(b)} ${M(b)}`,
+    d1full: `${H(a)}, ${D(a)} ${M(a)} ${Y(a)}`, d1day: `${H(a)}, ${D(a)} ${M(a)}`
+  };
+  document.querySelectorAll("[data-tgl]").forEach(el => { if (T[el.dataset.tgl]) el.textContent = T[el.dataset.tgl]; });
+  const ymd = x => x.toISOString().slice(0, 10).replace(/-/g, "");
+  const cal = $("calBtn"); if (cal) cal.href = cal.href.replace(/dates=[^&]+/, "dates=" + ymd(a) + "T070000Z%2F" + ymd(b) + "T050000Z");
+})();
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const store = { get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }, set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} } };
 
@@ -721,7 +750,15 @@ document.querySelectorAll("#gallery button").forEach(b => b.addEventListener("cl
   if (b.dataset.video) lbOpen([{ video: b.dataset.video, cap: "Tur El Villa Forest · " + b.querySelector(".cap").textContent }], 0);
   else lbOpen(photos, +b.dataset.i);
 }));
-$("guideBtn").addEventListener("click", () => lbOpen([{ src: "panduan-outfit.jpg", cap: "Panduan outfit (ilustrasi). Tidak harus sama persis." }], 0));
+const boards = [
+  { src: "outfit-cowok.jpg?v=2", cap: "Referensi outfit cowok · tidak harus sama persis, yang penting berkemeja, rapi, dan bersepatu." },
+  { src: "outfit-cewek.jpg?v=2", cap: "Referensi outfit cewek · tidak harus sama persis, yang penting formal, rapi, dan bersepatu." },
+  { src: "outfit-hijab.jpg?v=2", cap: "Referensi outfit cewek berhijab · tidak harus sama persis, yang penting formal, rapi, dan bersepatu." }
+];
+const curTab = () => Math.max(0, tabs.findIndex(t => t.getAttribute("aria-selected") === "true"));
+$("guideBtn").addEventListener("click", () => lbOpen(boards, curTab()));
+document.querySelectorAll(".lookbook img").forEach((im, i) => im.addEventListener("click", () => lbOpen(boards, i)));
+$("qrisBtn").addEventListener("click", () => lbOpen([{ src: "qris-lsand.jpg", cap: "QRIS Lsand - Course · scan lalu masukkan nominal Rp175.000. Jangan lupa screenshot bukti bayarnya." }], 0));
 
 /* ===== API ===== */
 async function api(payload){
